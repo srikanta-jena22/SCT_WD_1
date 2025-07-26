@@ -13,7 +13,7 @@ This project features a fully responsive navigation menu designed using HTML, CS
 - JavaScript – Menu toggle functionality
 
 ## 📸 Preview
-https://github.com/user-attachments/assets/6730e40c-21bb-4707-a92b-6ade73158443
+https://github.com/user-attachments/assets/9e71dc94-cdbd-4b75-987d-8e4f5e2e32f9
 
 ## 🧠 What I Learned
 - Responsive layout techniques using media queries
