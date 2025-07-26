@@ -1,0 +1,136 @@
+*{
+  margin:0; 
+  padding:0;
+  box-sizing:border-box
+}
+html{
+  scroll-behavior:smooth
+}
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:#1e1e2f;
+  color:#fff;
+  line-height:1.6
+}
+#navbar{
+  position:fixed;
+  inset:0 0 auto 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:transparent;
+  transition:background .3s ease,box-shadow .3s ease;
+  
+}
+#navbar.scrolled{
+  background:#2c2c3e;
+  box-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+.logo{
+  font-size:1.5rem;
+  font-weight:700;
+}
+.nav-links{
+  -style:none;
+  display:flex;
+  gap:24px
+}
+.nav-links a{
+  text-decoration:none;
+  color:#fff;
+  padding:6px 0;
+  transition:color .3s,border-bottom .3s;
+}
+.nav-links a:hover,.nav-links a:focus{
+  color:#ff4757;
+  border-bottom:2px solid #ff4757;
+}
+.nav-toggle{
+  display:none;
+}
+.hamburger{
+  display:none;
+  cursor:pointer;
+}
+.hamburger span,.hamburger span::before,.hamburger span::after{
+  display:block;
+  width:26px;
+  height:3px;
+  background:#fff;
+  border-radius:2px;
+  position:relative;
+  transition:.3s
+}
+.hamburger span::before,.hamburger span::after{
+  content:"";
+  position:absolute;
+  left:0;
+}
+.hamburger span::before{
+  top:-8px;
+}
+.hamburger span::after{
+  top:8px;
+}
+.nav-toggle:checked + .hamburger span{
+  background:transparent;
+}
+.nav-toggle:checked + .hamburger span::before{
+  transform:rotate(45deg) translate(5px,5px);
+}
+.nav-toggle:checked + .hamburger span::after{
+  transform:rotate(-45deg) translate(5px,-5px);
+}
+.nav-toggle:checked ~ nav .nav-links{
+  max-height:240px;
+}
+
+@media (max-width:768px){
+  .hamburger{
+    display:block;
+  }
+  nav{
+    width:100%;
+  }
+  .nav-links{
+    flex-direction:column;
+    align-items:flex-start;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+    margin-top:12px
+  }
+}
+.main{
+  min-height:1000px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 1rem;
+}
+.main h1{
+  font-size:2.8rem;
+  margin-bottom:16px;
+}
+.main p{
+  max-width:700px;
+  font-size:1.2rem;
+}
+.panel{
+  padding:100px 10%;
+  background:#1a1a42;
+}
+.panel h2{
+  font-size:2rem;
+  margin-bottom:12px
+}
+
+footer{
+  padding:60px 0;
+  text-align:center;
+  font-size:.9rem;
+  background:#181824;
+}
