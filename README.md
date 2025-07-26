@@ -19,9 +19,3 @@ https://github.com/user-attachments/assets/6730e40c-21bb-4707-a92b-6ade73158443
 - Responsive layout techniques using media queries
 - Event-driven JavaScript (click events, toggles)
 - Creating accessible and modern navigation bars
-
-## 🛠️ How to Run Locally
-```bash
-git clone https://github.com/srikanta-jena22/SCT_WD_X.git
-cd SCT_WD_X
-open index.html  # Or run with Live Server in VSCode
